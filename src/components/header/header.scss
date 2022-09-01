@@ -1,0 +1,97 @@
+@import "../../global_scss/colors";
+@import "../../global_scss/fonts";
+@import "../../global_scss/animations/text-anim";
+header{
+  width: 100%;
+  height: 50px;
+  background: $header-backgound;
+  z-index: 0;
+  .navBar{
+    font-family: $mainFont;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    span{
+      color: white;
+    }
+    a{
+      margin-right: 15px;
+    }
+    .navLogo{
+      z-index: 1;
+      font-size: 24px;
+      font-family: $logoFont;
+      margin-right: 30px;
+      .logo1{
+        transition-duration: 1s;
+        margin-left: 20px;
+        margin-right: 0;
+      }
+      .logo2{
+        transition-duration: 1s;
+        color: #00e32d;
+        padding-right: 5px;
+        border-radius: 20%;
+      }
+    }
+    .navLogo :hover{
+      .logo1{
+        color: #00e32d;
+      }
+      .logo2{
+        color: white;
+      }
+    }
+    .navButtons{
+      height: 50px;
+      display: flex;
+      align-items: center;
+      a {
+        span {
+          transition-duration: 0.4s;
+        }
+        span:hover{
+          color: rgba(163, 255, 89, 0.63);
+        }
+      }
+      .active{
+        span{
+          transition-duration: 0.6s;
+          padding-bottom: 14px;
+          color: rgba(154, 153, 153, 0.7);
+          border-bottom: #374b37 2px solid;
+        }
+        span:hover{
+          color: rgba(154, 153, 153, 0.7);
+          cursor: default;
+        }
+      }
+      }
+      }
+    .loginButtons{
+      display: flex;
+      margin-left: auto;
+      margin-right: 40px;
+      .login{
+        transition-duration: 0.4s;
+      }
+      .signup{
+        transition-duration: 0.4s;
+      }
+      .signup:hover{
+        color: rgba(163, 255, 89, 0.63);
+      }
+      .login:hover{
+        color: rgba(163, 255, 89, 0.63);
+      }
+    }
+    .changeLanguage{
+      margin-top: 7px;
+      margin-right: 20px;
+      img{
+        width: 30px;
+        height: 20px;
+      }
+    }
+  }
