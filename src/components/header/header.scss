@@ -90,9 +90,12 @@ header{
     .changeLanguage{
       margin-top: 7px;
       margin-right: 20px;
+      :hover{
+        cursor: pointer;
+      }
       img{
-        width: 30px;
-        height: 20px;
+        width: 35px;
+        height: 25px;
       }
     }
   }
